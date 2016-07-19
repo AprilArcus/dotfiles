@@ -10,6 +10,11 @@
 				"dir_limit_depth": 0,
 				"ellipsis": "…"
 			}
+		},
+		"powerline.segments.common.vcs.branch": {
+			"args": {
+				"status_colors": true
+			}
 		}
 	}
 }

@@ -127,16 +127,16 @@ tput cup $(( LINES - 2 ))
 # PS1='$(tput cup 25)'$PS1
 
 # update timestamp every second
-TMOUT=1
-TRAPALRM() {
-    # unless we're in a PS2 continuation!
-    # for some reason the %_ global gets reset after zle-reset-prompt,
-    # causing PS2 to be redrawn with a blank prompt.
-    if [[ -z $PREBUFFER ]]; then
-        zle reset-prompt
-        zle -R
-    fi
-}
+# TMOUT=1
+# TRAPALRM() {
+#     # unless we're in a PS2 continuation!
+#     # for some reason the %_ global gets reset after zle-reset-prompt,
+#     # causing PS2 to be redrawn with a blank prompt.
+#     if [[ -z $PREBUFFER ]]; then
+#         zle reset-prompt
+#         zle -R
+#     fi
+# }
 
 redraw_prompt () {
     local last_state=$?

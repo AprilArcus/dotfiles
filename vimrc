@@ -38,3 +38,14 @@ set ttymouse=xterm2
 set timeoutlen=1000 ttimeoutlen=0
 " https://www.johnhawthorn.com/2012/09/vi-escape-delays/
 """"""""""""""""""""""""
+
+
+""" POWERLINE """
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+" http://powerline.readthedocs.io/en/master/usage/other.html#vim-statusline
+set laststatus=2
+set showtabline=2
+set noshowmode
+" http://powerline.readthedocs.io/en/master/tips-and-tricks.html#vim

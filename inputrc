@@ -1,2 +1,6 @@
 set editing-mode vi
-
+set show-mode-in-prompt on
+# coming someday in readline 7
+set emacs-mode-string ''
+set vi-cmd-mode-string '(cmd)'
+set vi-ins-mode-string '(ins)'

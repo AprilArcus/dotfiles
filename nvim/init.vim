@@ -15,6 +15,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " Plug 'brettanomyces/nvim-terminus', Cond(has('nvim'))
 Plug 'neomake/neomake'
 Plug 'jaawerth/neomake-local-eslint-first'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " System integration
@@ -38,7 +39,6 @@ if (has("termguicolors"))
  set termguicolors
 endif
 colorscheme tender
-hi! link SpecialKey NonText
 hi! link VertSplit TabLine
 let g:terminal_color_8 = "#666666"
 let g:terminal_color_15 = "#eeeeee"

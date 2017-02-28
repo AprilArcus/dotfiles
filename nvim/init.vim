@@ -40,6 +40,7 @@ if (has("termguicolors"))
 endif
 colorscheme tender
 hi! link VertSplit TabLine
+hi Comment term=italic cterm=italic gui=italic
 let g:terminal_color_8 = "#666666"
 let g:terminal_color_15 = "#eeeeee"
 

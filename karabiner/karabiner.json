@@ -24,7 +24,11 @@
             "name": "Default profile",
             "selected": true,
             "simple_modifications": {
-                "caps_lock": "left_control"
+                "caps_lock": "left_control",
+                "left_command": "left_option",
+                "left_option": "left_command",
+                "right_command": "right_option",
+                "right_option": "right_command"
             },
             "standalone_keys": {
                 "caps_lock": "escape"

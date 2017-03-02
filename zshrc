@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-export PATH="/usr/local/sbin:$PATH"
+PATH="/usr/local/sbin:$PATH"
+eval "$(pyenv init -)"
+# PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+# MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 
 # Set name of the theme to load.

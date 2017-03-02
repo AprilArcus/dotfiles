@@ -57,6 +57,10 @@ let g:lightline = {
 \ 'subseparator': { 'left': '', 'right': '' }
 \ }
 
+" Splits
+set splitright
+set splitbelow
+
 " Misc Appearance
 set cursorline
 let &colorcolumn="73,75,77,79,".join(range(81,999),",")

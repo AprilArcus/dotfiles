@@ -63,7 +63,7 @@ POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX=" $ "
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(vi-mode)
-plugins=()
+plugins=(git pyenv)
 
 # User configuration
 

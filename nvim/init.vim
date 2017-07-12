@@ -16,6 +16,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'neomake/neomake'
 Plug 'jaawerth/neomake-local-eslint-first'
 Plug 'rust-lang/rust.vim'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 " System integration

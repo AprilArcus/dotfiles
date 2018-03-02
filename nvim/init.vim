@@ -4,9 +4,7 @@ function! Cond(cond, ...)
 endfunction
 
 call plug#begin()
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'GutenYe/json5.vim'
+Plug 'sheerun/vim-polyglot'
 "Plug 'Kriegslustig/vim-flow'
 Plug 'jacoborus/tender'
 Plug 'sjl/vitality.vim', Cond(!has('nvim'))
@@ -15,11 +13,12 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " Plug 'brettanomyces/nvim-terminus', Cond(has('nvim'))
 Plug 'neomake/neomake'
 Plug 'jaawerth/neomake-local-eslint-first'
-Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-surround'
 call plug#end()
 
-" System integration
+set tabstop=2 shiftwidth=2 expandtab
+
+" System clipboard integration
 set clipboard^=unnamed
 if has('unnamedplus')
   set clipboard^=unnamedplus
@@ -36,7 +35,7 @@ autocmd FileType javascript,json,json5
 
 " Color Scheme
 syntax enable
-if (has("termguicolors"))
+if has('termguicolors')
  set termguicolors
 endif
 colorscheme tender
